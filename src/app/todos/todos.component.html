@@ -1,1 +1,6 @@
-<p>todos works!</p>
+<input #todo>
+<button (click)="add(todo.value)">Hinzufügen</button>
+
+<ul>
+  <li *ngFor="let todo of todos">{{ todo.title }}</li>
+</ul>
